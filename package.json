@@ -1,0 +1,26 @@
+{
+  "name": "aim",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.8",
+    "tailwindcss": "^2.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build-css": "tailwindcss build src/styles.css -o main/css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jshi22/aim.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jshi22/aim/issues"
+  },
+  "homepage": "https://github.com/jshi22/aim#readme"
+}

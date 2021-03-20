@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html style="scroll-behavior: smooth;">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+  <title>AIM</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- <link rel="stylesheet" href="{% static 'css/main.css' %}"> -->
+</head>
+
+<body class="bg-secondary-300">
+  <div class="home h-screen bg-gradient-to-b from-secondary-300 via-primary to-primary">
+    <div class="container mx-auto /border-4 px-16">
+      <nav class="">
+        <div class="mx-auto px-4 sm:px-6 lg:px-8 mt-4">
+          <div class="flex items-center justify-between h-20">
+            <div class="flex items-center">
+              <div class="flex-shrink-0">
+                <img class="h-12 w-12" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow">
+              </div>
+              <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a href="#event" class="text-white hover:text-gray-100 px-3 py-2 text-xl font-medium border-b-2 border-white border-opacity-0 hover:border-opacity-100">Event</a>
+
+                  <a href="#contest" class="text-white hover:text-gray-100 px-3 py-2 text-xl font-medium border-b-2 border-white border-opacity-0 hover:border-opacity-100">FAQ</a>
+
+                  <a href="#sponsors" class="text-white hover:text-gray-100 px-3 py-2 text-xl font-medium border-b-2 border-white border-opacity-0 hover:border-opacity-100">Sponsors</a>
+
+                  <a href="#team" class="text-white hover:text-gray-100 px-3 py-2 text-xl font-medium border-b-2 border-white border-opacity-0 hover:border-opacity-100">Team</a>
+
+                  <a href="#contact" class="text-white hover:text-gray-100 px-3 py-2 text-xl font-medium border-b-2 border-white border-opacity-0 hover:border-opacity-100">Contact</a>
+                </div>
+              </div>
+            </div>
+            <div class="hidden md:block">
+              <div class="ml-4 flex items-center md:ml-6">
+                <button class="w-32 h-10 border-3 rounded-full border-white hover:bg-secondary-300">
+                  <span class="text-white text-xl font-semibold">Register</span>
+                </button>
+            </div>
+            <div class="-mr-2 flex md:hidden">
+              <!-- Mobile menu button -->
+              <button type="button" class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <!--
+                  Heroicon name: outline/menu
+
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+                <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <!--
+                  Heroicon name: outline/x
+
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+                <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="md:hidden" id="mobile-menu">
+          <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">Dashboard</a>
+
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
+
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
+
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Reports</a>
+          </div>
+        </div>
+      </nav>
+
+    <!-- homepage -->
+    <section id="home" class="max-h-screen">
+      <header class="">
+        <div class="flex flex-col content-end /border-4 h-40 w-6/12 ml-auto py-6 px-4 sm:px-6 lg:px-8 z-20 mt-6">
+          <h1 class="text-right text-6xl font-bold text-secondary-100">
+            Abbot Initiative in
+          </h1>
+          <h1 class="text-right text-6xl font-bold text-secondary-100">
+            Mathematics
+          </h1>
+        </div>
+      </header>
+
+      <div class="flex flex-col content-end /border-4 h-72 w-5/12 ml-auto py-6 px-4 sm:px-6 lg:px-8 z-20">
+          <h4 class="text-secondary-100 text-left text-2xl font-semibold">
+            The Abbot Initiative in Mathematics (AIM) serves to empower young people of
+            underrepresented genders in STEM through a one-day celebration of mathematics—endorsed and
+            supported by Phillips Academy and the Abbot Academy Fund.
+          </h4>
+          <div class="mx-auto md:mt-6">
+            <button class="w-40 h-14 border-3 rounded-full border-white hover:">
+              <span class="text-white text-2xl font-semibold">Register</span>
+            </button>
+          </div>
+        </div>
+        <div class="h-5/12 w-6/12 /border-4 ml-4 move-up z-20">
+          <img src="images/girl-studying.png" alt="girl studying" class="object-fill">
+        </div>
+      </div>
+    </section>
+    </div>
+  </div>
+
+  <!-- Event Page-->
+  <section id="event" class="bg-white pb-16">
+    <div class="container mx-auto px-32">
+      <h1 class="pt-16 text-center text-5xl text-gray-700 font-bold">Event</h1>
+      <p class="text-2xl text-center mt-8">AIM 2021 will be a virtual one-day event including a competition, speaker event, and community bonding activities for young mathematicians.</p>
+      <p class="text-2xl text-center">Click on each panel for more details about each section.</p>
+    </div>
+
+    <div class="mt-12">
+    <div class="grid xl:grid-cols-3 gap-4 grid-cols-1">
+      <div class="mx-auto relative py-3">
+        <div class="mx-auto w-2/3 sm:w-1/2 lg:w-1/2 xl:w-3/4 absolute inset-0 bg-primary shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
+          <div class="mx-auto w-2/3 sm:w-1/2 lg:w-1/2 xl:w-3/4 relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl border-2 border-gray-500">
+            <div class="container px-6 mx-auto">
+              <div class="">
+                <h2 class="text-3xl mx-auto text-center font-medium"> Contest </h2>
+              </div>
+              <div class="mt-2">
+                <p class="leading-relaxed">The competition aspect of AIM will consist of two rounds. Each round will be split into different sections
+                   depending on the participant's grade level. </p>
+                <ul class="mt-4 ml-10 list-disc leading-relaxed">
+                  <li> Speed Round <br> (30 Minutes)</li>
+                  <li> Challenge Round <br> (25 Minutes)</li>
+                </ul>
+                <p class="leading-relaxed mt-2">Some more text here. </p>
+                <div class="mt-4 border-t-2 pt-6 text-base leading-6 font-bold sm:text-lg sm:leading-7">
+                  <p>Want more specifics of the competition?</p>
+                  <p>
+                    <a href="#contest" class="text-cyan-600 hover:text-cyan-700"> Learn More &rarr; </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mx-auto relative py-3">
+          <div class="mx-auto w-2/3 sm:w-1/2 lg:w-1/2 xl:w-3/4 absolute inset-0 bg-yallow shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
+            <div class="mx-auto w-2/3 sm:w-1/2 lg:w-1/2 xl:w-3/4 relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl border-2 border-gray-500">
+              <div class="container px-6 mx-auto">
+                <div class="">
+                  <h2 class="text-3xl mx-auto text-center font-medium"> Speakers </h2>
+                </div>
+                <div class="mt-2">
+                  <p class="leading-relaxed">The competition aspect of AIM will consist of two rounds. Each round will be split into different sections
+                     depending on the participant's grade level. </p>
+                  <ul class="mt-4 ml-10 list-disc leading-relaxed">
+                    <li> Speed Round <br> (30 Minutes)</li>
+                    <li> Challenge Round <br> (25 Minutes)</li>
+                  </ul>
+                  <p class="leading-relaxed mt-2">Some more text here. </p>
+                  <div class="mt-4 border-t-2 pt-6 text-base leading-6 font-bold sm:text-lg sm:leading-7">
+                    <p>Want to learn more about our speakers?</p>
+                    <p>
+                      <a href="https://tailwindcss.com/docs" class="text-cyan-600 hover:text-cyan-700"> Learn More &rarr; </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mx-auto relative py-3">
+            <div class="mx-auto w-2/3 sm:w-1/2 lg:w-1/2 xl:w-3/4 absolute inset-0 bg-secondary-200 opacity-50 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
+              <div class="mx-auto w-2/3 sm:w-1/2 lg:w-1/2 xl:w-3/4 relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl border-2 border-gray-500">
+                <div class="container px-6 mx-auto">
+                  <div class="">
+                    <h2 class="text-3xl mx-auto text-center font-medium"> Community </h2>
+                  </div>
+                  <div class="mt-2">
+                    <p class="leading-relaxed">The competition aspect of AIM will consist of two rounds. Each round will be split into different sections
+                       depending on the participant's grade level. </p>
+                    <ul class="mt-4 ml-10 list-disc leading-relaxed">
+                      <li> Speed Round <br> (30 Minutes)</li>
+                      <li> Challenge Round <br> (25 Minutes)</li>
+                    </ul>
+                    <p class="leading-relaxed mt-2">Some more text here. </p>
+                    <div class="mt-4 border-t-2 pt-6 text-base leading-6 font-bold sm:text-lg sm:leading-7">
+                      <p>Want to learn more about our community bonding activities?</p>
+                      <p>
+                        <a href="https://tailwindcss.com/docs" class="text-cyan-600 hover:text-cyan-700"> Learn More &rarr; </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
+
+  <!-- Schedule -->
+  <section id="schedule" class="bg-white pb-12">
+    <div class="container mx-auto px-32">
+      <h1 class="pt-16 text-center text-4xl text-gray-700 font-bold">Schedule</h1>
+      <p class="text-2xl text-center mt-8">AIM 2021 will be held on Wednesday, June 3rd.</p>
+      <div class="mt-12 mx-auto">
+        <img src="https://www.liquidlight.co.uk/fileadmin/uploads/ll/misc/html-schedule.png" alt="">
+      </div>
+      <p class="text-lg text-center mt-4 italic">All times listed are in EST.</p>
+    </div>
+  </section>
+
+  <!-- Contest Page -->
+  <section id="contest" class="bg-primary pb-12">
+    <div class="container mx-auto px-32">
+      <h1 class="pt-16 text-center text-5xl text-gray-700 font-bold">Contest</h1>
+      <p class="text-2xl text-center mt-8">AIM 2021 will be a virtual one-day event including a competition, speaker event, and community bonding activities for young mathematicians.</p>
+      <p class="text-2xl text-center">Click on each panel for more details about each section.</p>
+    </div>
+  </section>
+
+  <!-- Speakers -->
+  <section id="speakers" class="bg-yallow pb-12">
+    <div class="container mx-auto px-32">
+      <h1 class="pt-16 text-center text-5xl text-gray-700 font-bold">Speaker Panel</h1>
+      <p class="text-2xl text-center mt-8">AIM 2021 will be a virtual one-day event including a competition, speaker event, and community bonding activities for young mathematicians.</p>
+      <p class="text-2xl text-center">Click on each panel for more details about each section.</p>
+    </div>
+  </section>
+
+  <!-- Community -->
+  <section id="community" class="bg-secondary-300 pb-12">
+    <div class="container mx-auto px-32">
+      <h1 class="pt-16 text-center text-5xl text-gray-700 font-bold">Contest</h1>
+      <p class="text-2xl text-center mt-8">AIM 2021 will be a virtual one-day event including a competition, speaker event, and community bonding activities for young mathematicians.</p>
+      <p class="text-2xl text-center">Click on each panel for more details about each section.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+
+  <section id="faq" class="bg-white pb-12">
+    <div class="container mx-auto px-32">
+      <h1 class="pt-16 text-center text-5xl text-gray-700 font-bold">Frequently Asked Questions</h1>
+      <p class="text-2xl text-center mt-8">AIM 2021 will be a virtual one-day event including a competition, speaker event, and community bonding activities for young mathematicians.</p>
+      <p class="text-2xl text-center">Click on each panel for more details about each section.</p>
+    </div>
+  </section>
+
+</body>
+
+
+
+</html>
