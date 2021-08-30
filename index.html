@@ -11,8 +11,8 @@
 </head>
 
 <body class="bg-secondary-300 font-body">
-  <div class="home h-screen bg-gradient-to-b from-secondary-300 via-primary to-primary">
-    <div class="container mx-auto /border-4 px-16">
+  <div class="home h-screen w-full bg-gradient-to-b from-secondary-300 via-primary to-primary">
+    <div class="container mx-auto /border-4 px-6 sm:px-8 md:px-16">
       <nav class="">
         <div class="mx-auto px-4 sm:px-6 lg:px-8 mt-4">
           <div class="flex items-center justify-between h-20">
@@ -32,13 +32,13 @@
 
                   <a href="#faq" class="text-white hover:text-gray-100 px-3 py-2 text-xl font-medium">FAQ</a>
 
-                  <a href="#team" class="text-white hover:text-gray-100 px-3 py-2 text-xl font-medium">Our Team</a>
+                  <!-- <a href="#team" class="text-white hover:text-gray-100 px-3 py-2 text-xl font-medium">Our Team</a> -->
                 </div>
               </div>
             </div>
             <div class="hidden md:block">
               <div class="ml-4 flex items-center md:ml-6">
-                <button class="w-32 h-10 border-3 rounded-full border-white hover:bg-secondary-300">
+                <button class="w-32 h-10 shadow-xl \border-3 rounded-full border-white hover:bg-secondary-300">
                   <span class="text-white text-xl font-semibold"><a class="typeform-share button" target=_blank href="https://qsryce2bo84.typeform.com/to/QwkEiNZo" data-mode="popup"  data-size="100" data-submit-close-delay="3">Register</a></span>
                 </button>
             </div>
@@ -68,9 +68,9 @@
         </div>
 
         <!-- Mobile menu, show/hide based on menu state. -->
-        <div class="md:hidden" id="mobile-menu">
+        <!-- <div class="md:hidden" id="mobile-menu">
           <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white"
             <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">Dashboard</a>
 
             <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
@@ -81,38 +81,47 @@
 
             <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Reports</a>
           </div>
-        </div>
+        </div> -->
       </nav>
 
     <!-- homepage -->
     <section id="home" class="max-h-screen">
       <header class="">
-        <div class="flex flex-col content-end /border-4 h-40 w-7/12 ml-auto py-6 px-4 sm:px-6 lg:px-8 z-20 mt-6">
-          <h1 class="text-right text-6xl font-bold text-secondary-100">
+        <div class="flex flex-col content-end /border-4 h-40 w-2/3 md:w-7/12 ml-auto py-6 px-4 sm:px-6 lg:px-8 z-20 mt-6">
+          <h1 class="text-left md:text-right text-3xl md:text-6xl font-bold text-secondary-100">
             Abbot Initiative in
           </h1>
-          <h1 class="text-right text-6xl font-bold text-secondary-100">
+          <h1 class="text-left md:text-right text-3xl md:text-6xl font-bold text-secondary-100">
             Mathematics
           </h1>
-          <h1 class="text-right text-2xl font-Regular text-secondary-200">
+          <h1 class="text-right text-lg md:text-2xl font-Regular text-secondary-200">
             October 3, 2021
           </h1>
         </div>
       </header>
 
-      <div class="mt-4 flex flex-col content-end /border-4 h-72 w-5/12 ml-auto py-6 px-4 sm:px-6 lg:px-8 z-20">
-          <h4 class="text-secondary-100 text-left text-2xl font-semibold">
+      <div class="mt-4 flex flex-col content-end /border-4 h-72 w-6/12 md:w-5/12 ml-auto py-6 px-4 sm:px-6 lg:px-8 z-20">
+          <h4 class="text-secondary-100 text-left text-sm md:text-2xl font-semibold">
             The Abbot Initiative in Mathematics (AIM) serves to empower young people of
-            underrepresented genders in STEM through a one-day celebration of mathematics—endorsed and
-            supported by Phillips Academy and the Abbot Academy Fund.
+            underrepresented genders in STEM through a one-day celebration of mathematics.
           </h4>
-          <div class="mx-auto md:mt-6">
-            <button class="w-48 h-14 border-3 rounded-full border-white register">
-              <span class="text-white text-2xl font-semibold "><a class="typeform-share button" target=_blank href="https://qsryce2bo84.typeform.com/to/QwkEiNZo" data-mode="popup"  data-size="100" data-submit-close-delay="3">Register</a></span>
+          <h4 class="md:block hidden text-secondary-100 text-left italic text-base mt-4 font-semibold">
+            Eligible students includes students grades 4-8 identifying as cis women, genderqueer,
+            trans women, genderfluid, gender neutral, trans men, and agender.
+          </h4>
+          <div class="mx-auto mt-10">
+            <button class="w-36 h-10 md:w-48 md:h-14 bg-blue-500 \border-3 rounded-full border-white register shadow-xl">
+              <span class="text-white text-lg md:text-2xl font-semibold "><a class="typeform-share button" target=_blank href="https://qsryce2bo84.typeform.com/to/QwkEiNZo" data-mode="popup"  data-size="100" data-submit-close-delay="3">Register</a></span>
             </button>
           </div>
         </div>
-        <div class="h-5/12 w-6/12 /border-4 ml-4 move-up z-20">
+        <div class="md:hidden content mt-24 w-full ">
+          <h4 class="text-secondary-100 text-left italic text-xs mt-4">
+            Eligible students includes students grades 4-8 identifying as cis women, genderqueer,
+            trans women, genderfluid, gender neutral, trans men, and agender.
+          </h4>
+        </div>
+        <div class="h-5/12 w-5/12 md:w-6/12 /border-4 ml-4 move-up z-10">
           <img src="images/girl-studying.png" alt="girl studying" class="object-fill">
         </div>
       </div>
@@ -122,10 +131,10 @@
 
   <!-- Event Page-->
   <section id="event" class="bg-white pb-16">
-    <div class="container mx-auto px-32">
+    <div class="container mx-auto px-20 sm:px-32">
       <h1 class="pt-16 text-center text-5xl text-gray-700 font-bold">Event</h1>
-      <p class="text-2xl text-center mt-8">AIM 2021 will be a virtual one-day event including a competition, speaker event, and community bonding activities for young mathematicians.</p>
-      <p class="text-2xl text-center">Click on each panel for more details about each section.</p>
+      <p class="text-xl sm:text-2xl text-center mt-6 sm:mt-8">AIM 2021 will be a virtual one-day event including a competition, speaker event, and community bonding activities for young mathematicians.</p>
+      <p class="text-xl sm:text-2xl text-center mt-6 sm:mt-8">View each panel for more details about each section.</p>
     </div>
 
     <div class="mt-12">
@@ -141,8 +150,8 @@
                 <p class="leading-relaxed">The competition aspect of AIM will consist of two rounds. Each round will be split into different sections
                    depending on the participant's grade level. </p>
                 <ul class="mt-4 ml-10 list-disc leading-relaxed">
-                  <li> Speed Round <br> (30 Minutes, 20 Questions)</li>
-                  <li> Challenge Round <br> (25 Minutes, 10 Questions)</li>
+                  <li> Spring Round <br> (30 Minutes, 20 Questions)</li>
+                  <li> Challenge Round <br> (60 Minutes, 10 Questions)</li>
                 </ul>
                 <p class="leading-relaxed mt-2">Rounds will be proctored by Phillips Academy students. </p>
                 <div class="mt-4 border-t-2 pt-6 text-base leading-6 font-bold sm:text-lg sm:leading-7">
@@ -166,9 +175,10 @@
                   <p class="leading-relaxed">The competition aspect of AIM will consist of two rounds. Each round will be split into different sections
                      depending on the participant's grade level. </p>
                   <ul class="mt-4 ml-10 list-disc leading-relaxed">
-                    <li> The Seven Bridges of Konigsberg </li>
-                    <li> Counting Madness</li>
-                    <li> Exotic Arithmetic </li>
+                    <li> A Learning Circle for Learning Circles </li>
+                    <li> Graph Theory and Euler Characteristics</li>
+                    <li> Cars, Goats, and Infinity </li>
+                    <li> Buying Chicken Nuggets </li>
                   </ul>
                   <p class="leading-relaxed mt-2"> Minis will be taught by Phillips Academy students. </p>
                   <div class="mt-4 border-t-2 pt-6 text-base leading-6 font-bold sm:text-lg sm:leading-7">
@@ -208,67 +218,84 @@
             </div>
           </div>
         </div>
+
   </section>
 
   <!-- Schedule -->
   <section id="schedule" class="bg-white pb-12">
-    <div class="container mx-auto px-40 pb-12">
-      <h1 class="pt-16 text-center text-4xl text-gray-700 font-bold">Tentative Schedule</h1>
-      <p class="text-2xl text-center mt-8">AIM 2021 will be held on Sunday, October 3rd.</p>
-      <div class="mt-12 mx-auto">
-        <table class="w-full border-separate">
+    <div class="container w-full mx-auto px-10 sm:px-12 md:px-20 lg:px-40 pb-12">
+      <h1 class="pt-16 text-center text-4xl text-gray-700 font-bold">Schedule</h1>
+      <p class="text-xl mx-0 sm:mx-0 sm:text-2xl text-center mt-8">AIM 2021 will be held on Sunday, October 3rd.</p>
+      <div class="mt-12 ml-0">
+        <table class="table-fixed w-full border-separate">
           <div class="table flex flex-col justify-center">
             <tr>
-              <th class="px-8 py-4 font-normal text-lg">11:00</th>
-              <td colspan="4" rowspan="2" class="bg-red-400 rounded-md leading-7 font-bold px-4 py-4 text-xl">Opening Ceremony</td>
+              <th class="sm:px-8 sm:py-4 font-normal text-lg">10:00</th>
+              <td colspan="4" rowspan="2" class="bg-red-400 rounded-md leading-7 font-bold px-4 py-4 text-xl">Check-In</td>
             </tr>
             <tr>
-              <th class="border-t-2 border-dotted px-8 py-4 font-normal text-lg opacity-50">11:30</th>
-            </tr>
-            <tr class="pt-2">
-              <th class="border-t-2 border-dotted px-8 py-4 font-normal text-lg">12:00</th>
-              <td colspan="4" class="bg-primary rounded-md leading-7 font-bold px-4 py-4 text-xl">Speed Round <span class="block text-sm font-normal w-full">3 Difficulty Levels</span></td>
+              <th class="border-t-2 border-dotted sm:px-8 sm:py-4 font-normal text-lg opacity-50">10:30</th>
             </tr>
             <tr>
-              <th class="border-t-2 border-dotted px-8 py-4 font-normal text-lg opacity-50">12:30</th>
+              <th class="sm:px-8 sm:py-4 font-normal text-lg">11:00</th>
+              <td colspan="4" class="bg-primary rounded-md leading-7 font-bold px-4 py-4 text-xl">Speed Round <span class="block text-sm font-normal w-full">2 Difficulty Levels</span></td>
+            </tr>
+            <tr>
+              <th class="border-t-2 border-dotted sm:px-8 sm:py-4 font-normal text-lg opacity-50">11:30</th>
               <td colspan="4" class="bg-green-500 rounded-md leading-7 font-bold px-4 py-4 text-xl">Break</td>
             </tr>
-            <tr>
-              <th class="border-t-2 border-dotted px-8 py-4 font-normal text-lg">1:00</th>
-              <td colspan="4" class="bg-primary rounded-md leading-7 font-bold px-4 py-4 text-xl">Challenge Round <span class="block text-sm font-normal w-full">2 Difficulty Levels</span></td>
+            <tr class="pt-2">
+              <th class="border-t-2 border-dotted sm:px-8 sm:py-4 font-normal text-lg">12:00</th>
+              <td colspan="4" rowspan="2" class="bg-primary rounded-md leading-7 font-bold px-4 py-4 text-xl">Challenge Round <span class="block text-sm font-normal w-full">2 Difficulty Levels</span></td>
             </tr>
             <tr>
-              <th class="border-t-2 border-dotted px-8 py-4 font-normal text-lg opacity-50">1:30</th>
+              <th class="border-t-2 border-dotted sm:px-8 sm:py-4 font-normal text-lg opacity-50">12:30</th>
+            </tr>
+            <tr>
+              <th class="border-t-2 border-dotted sm:px-8 sm:py-4 font-normal text-lg">1:00</th>
               <td colspan="4" rowspan="2" class="bg-green-500 rounded-md leading-7 font-bold px-4 py-4 text-xl">Lunch</td>
             </tr>
             <tr>
-              <th class="border-t-2 border-dotted px-8 py-4 font-normal text-lg">2:00</th>
+              <th class="border-t-2 border-dotted sm:px-8 sm:py-4 font-normal text-lg opacity-50">1:30</th>
             </tr>
             <tr>
-              <th class="border-t-2 border-dotted px-8 py-4 font-normal text-lg opacity-50">2:30</th>
-              <td rowspan="2" colspan="2" class="bg-yellow-400 rounded-md leading-7 font-bold px-4 py-4 text-xl">Speaker One <span class="block text-sm font-normal w-full">TBA</span></td>
-              <td rowspan="2" class="bg-yellow-400 rounded-md leading-7 font-bold px-4 py-4 text-xl">Speaker Two <span class="block text-sm font-normal w-full">TBA</span></td>
-              <td rowspan="2" class="bg-yellow-400 rounded-md leading-7 font-bold px-4 py-4 text-xl">Speaker Three <span class="block text-sm font-normal w-full">TBA</span></td>
+              <th class="border-t-2 border-dotted sm:px-8 sm:py-4 font-normal text-lg">2:00</th>
+              <td rowspan="2" class="bg-yellow-400 rounded-md leading-7 font-bold px-2 px-2 sm:px-4 sm:py-4 text-base sm:text-xl">Math Mini <span class="hidden sm:block  text-sm font-normal w-full">A Learning Circle for Learning Circles</span></td>
+              <td rowspan="2" class="bg-yellow-400 rounded-md leading-7 font-bold px-2 px-2 sm:px-4 sm:py-4 text-base sm:text-xl">Math Mini <span class="hidden sm:block  text-sm font-normal w-full">Graph Theory and Euler Characteristics</span></td>
+              <td rowspan="2" colspan="2" class="bg-purple-400 rounded-md leading-7 font-bold px-2 px-2 sm:px-4 sm:py-4 text-base sm:text-xl w-full">STEMpower <span class="hidden sm:block  text-sm font-normal">Academic Opportunites in STEM</span></td>
             </tr>
             <tr>
-              <th class="border-t-2 border-dotted px-8 py-4 font-normal text-lg">3:00</th>
+              <th class="border-t-2 border-dotted sm:px-8 sm:py-4 font-normal text-lg opacity-50">2:30</th>
             </tr>
             <tr>
-              <th class="border-t-2 border-dotted px-8 py-4 font-normal text-lg opacity-50">3:30</th>
-              <td rowspan="2" colspan="4" class="bg-purple-400 rounded-md leading-7 font-bold px-4 py-4 text-xl">Community Bonding <span class="block text-sm font-normal w-full">Workshops designed by Andover students</span></td>
+              <th class="border-t-2 border-dotted sm:px-8 sm:py-4 font-normal text-lg">3:00</th>
+              <td rowspan="2" colspan="4" class="bg-yellow-200 rounded-md leading-7 font-bold px-4 py-4 text-xl">Meet Our Speaker <span class="block text-sm font-normal w-full">Dr. Rachel Levy</span></td>
             </tr>
             <tr>
-              <th class="border-t-2 border-dotted px-8 py-4 font-normal text-lg">4:00</th>
+              <th class="border-t-2 border-dotted sm:px-8 sm:py-4 font-normal text-lg opacity-50">3:30</th>
             </tr>
             <tr>
-              <th class="border-t-2 border-dotted px-8 py-4 font-normal text-lg opacity-50">4:30</th>
+              <th class="border-t-2 border-dotted sm:px-8 sm:py-4 font-normal text-lg">4:00</th>
+              <td rowspan="2" class="bg-yellow-400 rounded-md leading-7 font-bold px-2 px-2 sm:px-4 sm:py-4 text-base sm:text-xl">Math Mini <span class="hidden sm:block  text-sm font-normal w-full">Cars, Goats, and Candles</span></td>
+              <td rowspan="2" class="bg-yellow-400 rounded-md leading-7 font-bold px-2 px-2 sm:px-4 sm:py-4 text-base sm:text-xl">Math Mini <span class="hidden sm:block  text-sm font-normal w-full">Buying Chicken Nuggets</span></td>
+              <td rowspan="2" colspan="2" class="bg-purple-400 rounded-md leading-7 font-bold px-2 px-2 sm:px-4 sm:py-4 text-base sm:text-xl w-full">Community Workshops <span class="hidden sm:block  text-sm font-normal">See below for more details</span></td>
             </tr>
             <tr>
-              <th class="border-t-2 border-dotted px-8 py-4 font-normal text-lg">5:00</th>
-              <td rowspan="2" colspan="4" class="bg-pink-400 rounded-md leading-7 font-bold px-4 py-4 text-xl">Award Ceremony</td>
+              <th class="border-t-2 border-dotted sm:px-8 sm:py-4 font-normal text-lg opacity-50">4:30</th>
             </tr>
             <tr>
-              <th class="border-t-2 border-dotted px-8 py-4 font-normal text-lg opacity-50">5:30</th>
+              <th class="border-t-2 border-dotted sm:px-8 sm:py-4 font-normal text-lg">5:00</th>
+              <td rowspan="2" colspan="4" class="bg-blue-400 rounded-md leading-7 font-bold px-4 py-4 text-xl">Phillips Academy Student Panel <span class="block text-sm font-normal w-full">See below for more details</span></td>
+            </tr>
+            <tr>
+              <th class="border-t-2 border-dotted sm:px-8 sm:py-4 font-normal text-lg opacity-50">5:30</th>
+            </tr>
+            <tr>
+              <th class="border-t-2 border-dotted sm:px-8 sm:py-4 font-normal text-lg">6:00</th>
+              <td rowspan="2" colspan="4" class="bg-pink-400 rounded-md leading-7 font-bold px-4 py-4 text-xl">Award Ceremony <span class="block text-sm font-normal w-full">See below for more details on prizes</span></td>
+            </tr>
+            <tr>
+              <th class="border-t-2 border-dotted sm:px-8 sm:py-4 font-normal text-lg opacity-50">6:30</th>
             </tr>
           </div>
         </table>
@@ -287,66 +314,78 @@
   </section> -->
 
   <!-- Speakers -->
-  <!-- <section id="speakers" class="bg-yallow pb-12">
+  <section id="speakers" class="bg-yallow pb-12">
     <div class="container mx-auto px-8 lg:px-32">
-      <h1 class="pt-16 text-center text-5xl text-gray-700 font-bold">Speaker Panel</h1>
-      <p class="text-2xl text-center mt-8">AIM 2021 will be a virtual one-day event including a competition, speaker event, and community bonding activities for young mathematicians.</p>
-      <p class="text-2xl text-center">Click on each panel for more details about each section.</p>
-
+      <h1 class="pt-16 text-center text-5xl text-gray-700 font-bold">Math Minis</h1>
+      <p class="text-2xl text-center mt-8">Each math mini coordinator has had mathematics experience throughout their time on and off the campus of Phillips Academy. Over the course of two months, math mini directors designed and edited syllabi to create the most engaging and positive experience for AIM participants. Participation is optional, but valuable for all those interested! </p>
       <div class="sm:flex-column">
 
-        Speaker 1
-        <div class="mx-auto xl:mx-0 mt-8 w-full xl:w-2/3 rounded-3xl bg-white py-8 px-8 xl:py-12 xl:px-12">
-          <div class="flex flex-row justify-start">
+        <!-- Speaker 1 -->
+        <div class="mx-auto xl:mx-0 mt-8 w-5/6 sm:w-full xl:w-5/6 rounded-3xl bg-white py-8 px-8 xl:py-12 xl:px-12">
+          <div class="flex sm:flex-row flex-col justify-start">
 
-            <div class="w-full md:w-2/3 xl:w-full h-full bg-cover">
-              <img src="images/bobama.jpeg" alt="bobamba" class="w-full h-full rounded-md object-center">
+            <div class="mx-auto w-3/4 md:w-1/2 xl:w-1/4 h-full bg-cover">
+              <img src="images/erin_kim.jpeg" alt="bobamba" class="w-full h-full rounded-md object-center">
             </div>
 
-            <div class="flex-grow pl-4 xl:pl-16">
-              <h2 class="text-sm sm:text-lg md:text-2xl lg:text-2xl text-center font-semibold">President Barack Obama</h2>
-              <p class="text-center text-sm sm:text-base md:text-lg lg:text-lg"> Barack Hussein Obama II is an American politician and attorney who served as the 44th president
-                of the United States. He is also my dad</p>
-              <h4 class="italic mt-4 text-center text-xs sm:text-sm lg:text-base">You can learn more about Mr. Obama <a href="https://barackobama.com/" target="_blank" class="text-blue-600 visited:text-purple-600">here</a> </h4>
-            </div>
-          </div>
-        </div>
-
-        Speaker 2
-        <div class="xl:mr-0 xl:ml-auto mx-auto mt-8 w-full xl:w-2/3 rounded-3xl bg-white py-8 px-8 xl:py-12 xl:px-12">
-          <div class="flex flex-row-reverse justify-start">
-
-            <div class="w-full md:w-2/3 xl:w-full h-full bg-cover">
-              <img src="images/bobama.jpeg" alt="bobamba" class="w-full h-full rounded-md object-center">
-            </div>
-
-            <div class="flex-grow pr-4 xl:pr-16">
-              <h2 class="text-sm sm:text-lg md:text-2xl lg:text-2xl text-center font-semibold">President Barack Obama</h2>
-              <p class="text-center text-sm sm:text-base md:text-lg lg:text-lg"> Barack Hussein Obama II is an American politician and attorney who served as the 44th president
-                of the United States. He is also my dad</p>
-              <h4 class="italic mt-4 text-center text-xs sm:text-sm lg:text-base">You can learn more about Mr. Obama <a href="https://barackobama.com/" target="_blank" class="text-blue-600 visited:text-purple-600">here</a> </h4>
+            <div class="flex-grow mx-auto w-5/6 sm:pl-4 xl:pl-16 sm:w-7/12">
+              <h2 class="mt-8 sm:mt-0 text-lg md:text-2xl lg:text-2xl text-center font-semibold">A Learning Circle for Learning Circles</h2>
+              <p class="sm:text-center text-sm sm:text-base md:text-lg lg:text-sm mt-6"> This workshop circles around all things circles. Circles, omnipresent in nature, serve as the foundation for countless math concepts and are an extremely useful tool for creative problem-solving. This workshop explains the core concepts related to circles—ranging from the story behind the number π to tangent, secant, and external segments—through fun, informative, and interactive activities. By the end of the workshop, students will have a better grasp of applying circles to solve various geometry problems. This workshop is for all students who are fascinated by shapes and wish to dive deeper into the world of geometry!</p>
+              <h4 class="italic mt-4 text-center text-md sm:text-sm lg:text-base"> Lead by Erin Kim '23</h4>
             </div>
           </div>
         </div>
 
-        Speaker 3
-        <div class="mx-auto xl:mx-0 mt-8 w-full xl:w-2/3 rounded-3xl bg-white py-8 px-8 xl:py-12 xl:px-12">
-          <div class="flex flex-row justify-start">
+        <!-- Speaker 2 -->
+        <div class="xl:mr-0 xl:ml-auto mx-auto mt-8 w-5/6 sm:w-full xl:w-5/6 rounded-3xl bg-white py-8 px-8 xl:py-12 xl:px-12">
+          <div class="flex sm:flex-row-reverse flex-col justify-start">
 
-            <div class="w-full md:w-2/3 xl:w-full h-full bg-cover">
-              <img src="images/bobama.jpeg" alt="bobamba" class="w-full h-full rounded-md object-center">
+            <div class="mx-auto w-3/4 md:w-1/2 xl:w-1/4 h-full bg-cover">
+              <img src="images/blank.png" alt="bobamba" class="w-full h-full rounded-md object-center">
             </div>
 
-            <div class="flex-grow pl-4 xl:pl-16">
-              <h2 class="text-sm sm:text-lg md:text-2xl lg:text-2xl text-center font-semibold">President Barack Obama</h2>
-              <p class="text-center text-sm sm:text-base md:text-lg lg:text-lg"> Barack Hussein Obama II is an American politician and attorney who served as the 44th president
-                of the United States. He is also my dad</p>
-              <h4 class="italic mt-4 text-center text-xs sm:text-sm lg:text-base">You can learn more about Mr. Obama <a href="https://barackobama.com/" target="_blank" class="text-blue-600 visited:text-purple-600">here</a> </h4>
+            <div class="flex-grow mx-auto w-5/6 sm:pr-4 xl:pr-16 sm:w-3/4">
+              <h2 class="mt-8 sm:mt-0 text-lg sm:text-lg md:text-2xl lg:text-2xl text-center font-semibold">Graph Theory and Euler Characteristics</h2>
+              <p class="sm:text-center text-sm sm:text-base md:text-lg lg:text-sm mt-6"> Graph theory sees applications in social networks analysis, computational biology and many other areas. One of its very cool theorems is the Euler Characteristics. In this workshop, we explore general graph theory, planar graphs, and Euler Characteristics. We then pivot to discuss a fun application of Euler Characteristics: using it to derive Pick’s Theorem (which allows us to compute the area of a polygon on a grid just by counting!)</p>
+              <h4 class="italic mt-4 text-center text-md sm:text-sm lg:text-base">Lead by Michael Huang '23</h4>
             </div>
           </div>
         </div>
 
-      </div> -->
+
+        <!-- Speaker 3 -->
+        <div class="mx-auto xl:mx-0 mt-8 w-5/6 sm:w-full xl:w-5/6 rounded-3xl bg-white py-8 px-8 xl:py-12 xl:px-12">
+          <div class="flex sm:flex-row flex-col justify-start">
+
+            <div class="mx-auto w-3/4 md:w-1/2 xl:w-1/4 h-full bg-cover">
+              <img src="images/sarah_pan.jpeg" alt="bobamba" class="w-full h-full rounded-md object-center">
+            </div>
+
+            <div class="flex-grow mx-auto w-5/6 sm:pl-4 xl:pl-16 sm:w-7/12">
+              <h2 class="mt-8 sm:mt-0 text-lg md:text-2xl lg:text-2xl text-center font-semibold">Cars, Goats, and Candles</h2>
+              <p class="sm:text-center text-sm sm:text-base md:text-lg lg:text-sm mt-6"> By working with fun examples, students will learn about combinations, permutations, constructive counting, complementary counting, principle of inclusion and exclusion, as well as delve into two popular probability paradoxes. The curriculum is written for students with minimal counting/probability background (a good understanding of algebra is preferred!) There will also be a chance for participants to win a $25 Amazon gift card.</p>
+              <h4 class="italic mt-4 text-center text-md sm:text-sm lg:text-base"> Lead by Sarah Pan '23</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Speaker 4 -->
+        <div class="xl:mr-0 xl:ml-auto mx-auto mt-8 w-5/6 sm:w-full xl:w-5/6 rounded-3xl bg-white py-8 px-8 xl:py-12 xl:px-12">
+          <div class="flex sm:flex-row-reverse flex-col justify-start">
+
+            <div class="mx-auto w-3/4 md:w-1/2 xl:w-1/4 h-full bg-cover">
+              <img src="images/blank.png" alt="bobamba" class="w-full h-full rounded-md object-center">
+            </div>
+
+            <div class="flex-grow mx-auto w-5/6 sm:pr-4 xl:pr-16 sm:w-3/4">
+              <h2 class="mt-8 sm:mt-0 text-lg sm:text-lg md:text-2xl lg:text-2xl text-center font-semibold">Buying Chicken Nuggets</h2>
+              <p class="sm:text-center text-sm sm:text-base md:text-lg lg:text-sm mt-6"> If given only boxes of chicken nuggets of size 6, 9, can we buy 39 chicken nuggets? What about 40? This question is the most important question you should ask when buying chicken nuggets. Its solution involves the Frobenius Number, which also has a minor application in the design of coin systems. What values should coins take on, optimally? In this workshop, we discuss the number theory concepts of divisibility and modulo arithmetic. We then extend the discussion to the Frobenius Theorem (aka. Chicken Nugget Theorem), its proof, and applications.</p>
+              <h4 class="italic mt-4 text-center text-md sm:text-sm lg:text-base">Lead by Michael Huang '23</h4>
+            </div>
+          </div>
+        </div>
+
+      </div>
 
     </div>
   </section>
@@ -354,7 +393,7 @@
   <!-- Community -->
   <!-- <section id="community" class="bg-secondary-300 pb-12">
     <div class="container mx-auto px-32">
-      <h1 class="pt-16 text-center text-5xl text-gray-700 font-bold">Community Bonding</h1>
+      <h1 class="pt-16 text-center text-5xl text-gray-700 font-bold">Community Workshops</h1>
       <p class="text-2xl text-center mt-8">The Abbot Initiative in Mathematics is proud to announce several workshop offerings centered around cultivating joy and exploring innovative mathematical concepts.
         The workshops are all designed by Andover students with a focus on discussion-based “Harkness learning.” See below for the specific workshops that will be offered. </p>
       <p class="text-2xl text-center">Click on each panel for more details about each section.</p>
@@ -362,50 +401,43 @@
   </section> -->
 
   <!-- FAQ -->
-<!--
+
   <section id="faq" class="bg-white pb-12">
     <div class="container mx-auto px-8 lg:px-32">
       <h1 class="pt-16 text-center text-5xl text-gray-700 font-bold">Frequently Asked Questions</h1>
 
       <div class="mt-16">
-        <button class="w-full accordion px-6 py-8 border-t-2 text-xl is-open">Why did the chicken cross the road?</button>
+        <button class="w-full accordion px-6 py-8 border-t-2 text-xl">Who is eligible to attend AIM?</button>
           <div class="accordion-content">
             <p class="mb-4">
-              Lorem ipsum dolor sit amet, onsectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-              ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-              in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Eligible students includes students grades 4-8 identifying as cis women, genderqueer, trans women, genderfluid, gender neutral, trans men, and agender. Click here to register.
             </p>
           </div>
-        <button class="w-full accordion px-6 py-8 border-t-2 text-xl">Why did the chicken cross the road?</button>
+          <button class="w-full accordion px-6 py-8 border-t-2 text-xl is-open">Is the AIM Competition Event Online?</button>
+            <div class="accordion-content">
+              <p class="mb-4">
+                Yes! All events and tests will be conducted virutally through Zoom.
+              </p>
+            </div>
+        <button class="w-full accordion px-6 py-8 border-t-2 text-xl">When specifically is AIM and what happens if I have a conflict of dates? </button>
           <div class="accordion-content">
             <p class="mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-              ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-              in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              The event is scheduled for October 3rd, 2021 and registration closes September 26, 2021. Only conflicts with a religious observance are accommodated.
             </p>
           </div>
-        <button class="w-full accordion px-6 py-8 border-t-2 text-xl">Why did the chicken cross the road?</button>
+        <button class="w-full accordion px-6 py-8 border-t-2 text-xl">How much does it cost to participate and what is included?</button>
           <div class="accordion-content">
             <p class="mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-              ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-              in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-              ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-              in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Our mission is to provide accessible resources to students everywhere. Thus, we have no registration fees, and each student will be mailed exclusive AIM and Phillips Academy merch.
             </p>
           </div>
-        <button class="w-full accordion px-6 py-8 border-t-2 text-xl">Why did the chicken cross the road?</button>
+        <button class="w-full accordion px-6 py-8 border-t-2 text-xl">How do you judge ties in scores? </button>
+          <div class="accordion-content">
+            <p class="mb-4">
+Questions generally increase in difficulty from beginning to end. For ties between participants, the student with a higher score from questions 10 through 20 on sprint will be ranked higher than the other student with the same score. Learn more about our contest guidelines here.
+            </p>
+          </div>
+        <!-- <button class="w-full accordion px-6 py-8 border-t-2 text-xl">Why did the chicken cross the road?</button>
           <div class="accordion-content">
             <p class="mb-4">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit,
@@ -421,47 +453,46 @@
               ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
               in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </p>
-          </div>
-        <button class="w-full accordion px-6 py-8 border-t-2 text-xl">Why did the chicken cross the road?</button>
-          <div class="accordion-content">
-            <p class="mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-              ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-              in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-              ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-              in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
-          </div>
-        <button class="w-full accordion px-6 py-8 border-t-2 text-xl">Why did the chicken cross the road?</button>
-          <div class="accordion-content">
-            <p class="mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-              ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-              in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-              ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-              in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
-          </div>
+          </div> -->
       </div>
 
-      <h2 class="text-xl text-center mt-8">Have more questions for us? <br> Reach out to us at <span class="italic text-blue-400">abbotinitiative@gmail.com</span>!</h2>
+      <!-- What exactly does the AIM event consist of? What do students do in this program?
+
+The Abbot Initiative event consists of:
+Contest (Sprint and Challenge Round. Click here to learn more)
+Group Session 1 (Math Minis and Community Workshops. Click here to learn more about Session 1 offerings.)
+Speaker Event with Dr. Rachel Levy (Click here to learn about Dr. Rachel Levy and submit questions to her.)
+Group Session 2 (Math Minis and Community Workshops. Click here to learn more about Session 2 offerings)
+Phillips Academy Student Panel (Click here to learn more about our Student panel)
+Award Ceremony
+
+Click our schedule to learn more.
+
+Is the AIM Competition event online?
+
+Yes! Click here to register or click here to learn more about how it works.
+
+Who is eligible to compete?
+
+Eligible students includes students grades 4-8 identifying as cis women, genderqueer, trans women, genderfluid, gender neutral, trans men, and agender. Click here to register.
+
+When specifically is AIM and what happens if I have a conflict of dates?
+
+The event is scheduled for October 3rd, 2021 and registration closes September 26, 2021. Only conflicts with a religious observance are accommodated.
+
+How much does it cost to participate and what is included?
+
+Our mission is to provide accessible resources to students everywhere. Thus, we have no registration fees, and each student will be mailed exclusive AIM and Phillips Academy merch.
+
+How do you judge ties in scores?
+
+Questions generally increase in difficulty from beginning to end. For ties between participants, the student with a higher score from questions 10 through 20 on sprint will be ranked higher than the other student with the same score. Learn more about our contest guidelines here.
+ -->
+
+      <h2 class="text-xl text-center mt-8">Have more questions for us? <br> Reach out to us at <a class="italic text-blue-400" href="mailto:abbotinitiative@gmail.com">abbotinitiative@gmail.com</a>!</h2>
 
     </div>
-  </section> -->
+  </section>
 
   <!-- Our Team -->
 
@@ -572,15 +603,15 @@
                 </div>
                 <div class="flex flex-col">
                     <span class="font-bold text-gray-800 uppercase mt-4 md:mt-0 mb-2">Contact Us</span>
-                    <span class="my-2"><a href="#" class="text-gray-800 text-md hover:text-gray-600">Email</a></span>
+                    <span class="my-2"><a href="mailto:info@abbotinitiative.org" class="text-gray-800 text-md hover:text-gray-600">Email</a></span>
                     <span class="my-2"><a href="#" class="text-gray-800 text-md hover:text-gray-600"></a></span>
                     <span class="my-2"><a href="#" class="text-gray-800 text-md hover:text-gray-600"></a></span>
                 </div>
                 <div class="flex flex-col">
                     <span class="font-bold text-gray-800 uppercase mt-4 md:mt-0 mb-2">Follow Us</span>
-                    <span class="my-2"><a href="#" class="text-gray-800 text-md hover:text-gray-600">Instagram</a></span>
-                    <span class="my-2"><a href="#" class="text-gray-800 text-md hover:text-gray-600">Facebook</a></span>
-                    <span class="my-2"><a href="#" class="text-gray-800 text-md hover:text-gray-600">Twitter</a></span>
+                    <span class="my-2"><a href="https://www.instagram.com/abbotinitiative/" class="text-gray-800 text-md hover:text-gray-600">Instagram</a></span>
+                    <span class="my-2"><a href="https://www.facebook.com/profile.php?id=100070883541240&ltclid=6e25fcf4-a40b-410b-be8b-bd01c2fe514e" class="text-gray-800 text-md hover:text-gray-600">Facebook</a></span>
+                    <!-- <span class="my-2"><a href="#" class="text-gray-800 text-md hover:text-gray-600">Twitter</a></span> -->
                 </div>
             </div>
         </div>
@@ -588,9 +619,9 @@
     <div class="container mx-auto px-6 pt-8">
         <div class="mt-8 flex flex-col items-center">
             <div class="flex flex row">
-              <a href="#"><img src="images/facebook.svg" alt="facebook" class="w-12 h-12 px-2"></a>
-              <a href="#"><img src="images/insta.svg" alt="facebook" class="w-12 h-12 px-2"></a>
-              <a href="#"><img src="images/twitterr.svg" alt="facebook" class="w-12 h-12 px-2"></a>
+              <a href="https://www.instagram.com/abbotinitiative/"><img src="images/facebook.svg" alt="facebook" class="w-12 h-12 px-2"></a>
+              <a href="https://www.facebook.com/profile.php?id=100070883541240&ltclid=6e25fcf4-a40b-410b-be8b-bd01c2fe514e"><img src="images/insta.svg" alt="facebook" class="w-12 h-12 px-2"></a>
+              <!-- <a href="#"><img src="images/twitterr.svg" alt="facebook" class="w-12 h-12 px-2"></a> -->
             </div>
             <div class="sm:w-2/3 text-center py-2">
                 <p class="text-sm text-gray-900 font-bold mb-2">

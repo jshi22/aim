@@ -1,6 +1,14 @@
+
 .move-up {
-  transform: translateY(-450px);
+  transform: translateY(-95vw);
 }
+
+@media only screen and (min-width: 760px) {
+  .move-up {
+    transform: translateY(-450px);
+  }
+}
+
 
 button.accordion {
   outline: none;
@@ -10,14 +18,15 @@ button.accordion {
 }
 
 button.accordion::after{
-  content: "\f078";
-  font-family: "fontawesome";
+  content: url("chevron-down.svg");
   font-size: 18px;
   float: right;
+  width: 1em;
+  height: 1em;
 }
 
 button.accordion.is-open::after{
-  content: "\f077";
+  content: url("chevron-up.svg");
 }
 
 /* button.accordion:hover{
